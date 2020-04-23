@@ -23,7 +23,7 @@ class WordAssistant {
         openFile()
     }
 
-    func openFile() {
+    func openFile() { // get Dictionary
         guard let path = Bundle.main.path(forResource: "word", ofType: "txt") else { return }
         do {
             let string = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
@@ -33,7 +33,7 @@ class WordAssistant {
         }
     }
 
-    func getAnagrams() {
+    func getAnagrams() { //Look for anagrams of the specified word on dictionary
         for w in words {
             if let anagram = verifyWord(word, w),
                 !anagram.isEmpty {
@@ -43,15 +43,18 @@ class WordAssistant {
     }
 
     func verifyWord(_ principalString: String,_ secondaryString: String) -> String? {
+        //Change both strings into array of dictionary with key and number of repetitions
         let principal = principalString.keyMap()
         let secondary = secondaryString.keyMap()
         var similarities = 0
         for p in principal {
+            //Check if the dictionary word has all the letters and less repetitions then the master word
             if let sim = secondary.filter({ $0.key == p.key }).first,
                 sim.value <= p.value {
                 similarities += 1
             }
         }
+        // check if all words are present
         if similarities == secondary.count {
             return secondaryString
         } else {
