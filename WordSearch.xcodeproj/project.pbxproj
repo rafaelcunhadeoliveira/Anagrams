@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		FC4547B62451E99A000A5582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4547B52451E99A000A5582 /* AppDelegate.swift */; };
 		FC4547B82451E99A000A5582 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4547B72451E99A000A5582 /* SceneDelegate.swift */; };
-		FC4547BA2451E99A000A5582 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4547B92451E99A000A5582 /* ViewController.swift */; };
 		FC4547BD2451E99A000A5582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4547BB2451E99A000A5582 /* Main.storyboard */; };
 		FC4547BF2451E99C000A5582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4547BE2451E99C000A5582 /* Assets.xcassets */; };
 		FC4547C22451E99C000A5582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4547C02451E99C000A5582 /* LaunchScreen.storyboard */; };
+		FC4547CC2451EB00000A5582 /* WordSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4547CB2451EB00000A5582 /* WordSearchViewController.swift */; };
+		FC4547CF2451EBB1000A5582 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4547CE2451EBB1000A5582 /* String+Extension.swift */; };
+		FC4547D12451F007000A5582 /* AssociateWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4547D02451F007000A5582 /* AssociateWordsViewController.swift */; };
+		FC4547D32451F068000A5582 /* WordAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4547D22451F068000A5582 /* WordAssistant.swift */; };
+		FC4547D52451F7AB000A5582 /* word.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC4547D42451F7AB000A5582 /* word.txt */; };
+		FC4547D72452391B000A5582 /* AnagramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4547D62452391B000A5582 /* AnagramTableViewCell.swift */; };
+		FC4547D9245247FA000A5582 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4547D8245247F9000A5582 /* AlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC4547B22451E99A000A5582 /* WordSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4547B52451E99A000A5582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC4547B72451E99A000A5582 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC4547B92451E99A000A5582 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC4547BC2451E99A000A5582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC4547BE2451E99C000A5582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC4547C12451E99C000A5582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC4547C32451E99C000A5582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4547CB2451EB00000A5582 /* WordSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSearchViewController.swift; sourceTree = "<group>"; };
+		FC4547CE2451EBB1000A5582 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		FC4547D02451F007000A5582 /* AssociateWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociateWordsViewController.swift; sourceTree = "<group>"; };
+		FC4547D22451F068000A5582 /* WordAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordAssistant.swift; sourceTree = "<group>"; };
+		FC4547D42451F7AB000A5582 /* word.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = word.txt; sourceTree = SOURCE_ROOT; };
+		FC4547D62452391B000A5582 /* AnagramTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnagramTableViewCell.swift; sourceTree = "<group>"; };
+		FC4547D8245247F9000A5582 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,45 @@
 		FC4547B42451E99A000A5582 /* WordSearch */ = {
 			isa = PBXGroup;
 			children = (
-				FC4547B52451E99A000A5582 /* AppDelegate.swift */,
-				FC4547B72451E99A000A5582 /* SceneDelegate.swift */,
-				FC4547B92451E99A000A5582 /* ViewController.swift */,
-				FC4547BB2451E99A000A5582 /* Main.storyboard */,
+				FC4547D42451F7AB000A5582 /* word.txt */,
+				FC4547CD2451EBA0000A5582 /* Controller */,
+				FC4547CA2451EAD1000A5582 /* View */,
+				FC4547C92451EAC0000A5582 /* App */,
 				FC4547BE2451E99C000A5582 /* Assets.xcassets */,
-				FC4547C02451E99C000A5582 /* LaunchScreen.storyboard */,
-				FC4547C32451E99C000A5582 /* Info.plist */,
 			);
 			path = WordSearch;
+			sourceTree = "<group>";
+		};
+		FC4547C92451EAC0000A5582 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FC4547C32451E99C000A5582 /* Info.plist */,
+				FC4547B52451E99A000A5582 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FC4547CA2451EAD1000A5582 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC4547D8245247F9000A5582 /* AlertController.swift */,
+				FC4547BB2451E99A000A5582 /* Main.storyboard */,
+				FC4547C02451E99C000A5582 /* LaunchScreen.storyboard */,
+				FC4547B72451E99A000A5582 /* SceneDelegate.swift */,
+				FC4547CB2451EB00000A5582 /* WordSearchViewController.swift */,
+				FC4547D02451F007000A5582 /* AssociateWordsViewController.swift */,
+				FC4547D62452391B000A5582 /* AnagramTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC4547CD2451EBA0000A5582 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC4547CE2451EBB1000A5582 /* String+Extension.swift */,
+				FC4547D22451F068000A5582 /* WordAssistant.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +169,7 @@
 			files = (
 				FC4547C22451E99C000A5582 /* LaunchScreen.storyboard in Resources */,
 				FC4547BF2451E99C000A5582 /* Assets.xcassets in Resources */,
+				FC4547D52451F7AB000A5582 /* word.txt in Resources */,
 				FC4547BD2451E99A000A5582 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC4547BA2451E99A000A5582 /* ViewController.swift in Sources */,
+				FC4547D12451F007000A5582 /* AssociateWordsViewController.swift in Sources */,
+				FC4547D72452391B000A5582 /* AnagramTableViewCell.swift in Sources */,
+				FC4547CF2451EBB1000A5582 /* String+Extension.swift in Sources */,
+				FC4547D32451F068000A5582 /* WordAssistant.swift in Sources */,
+				FC4547D9245247FA000A5582 /* AlertController.swift in Sources */,
 				FC4547B62451E99A000A5582 /* AppDelegate.swift in Sources */,
+				FC4547CC2451EB00000A5582 /* WordSearchViewController.swift in Sources */,
 				FC4547B82451E99A000A5582 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WordSearch/Info.plist;
+				INFOPLIST_FILE = WordSearch/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WordSearch/Info.plist;
+				INFOPLIST_FILE = WordSearch/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
